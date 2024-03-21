@@ -1,0 +1,53 @@
+article
+{
+    margin: 20px;
+    max-width: 100%;
+}
+
+img
+{
+    width: 100%;
+    max-width: 1000px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+ a:link {
+    color: rgb(0, 134, 22);
+    text-decoration: none;
+  }
+  
+  a:visited {
+    color: rgb(0, 66, 14);
+  }
+  
+  a:hover {
+    color: rgb(0, 100, 29);
+  }
+  
+  a:active {
+    color: blue;
+  } 
+
+h1, h2
+{
+    font-family: 'Open Sans',sans-serif;
+    text-align: center;
+}
+
+h1
+{
+    color: #28517A;
+    font-size: 34px;
+}
+
+h3
+{
+ font-size: 24px;
+}
+
+p
+{
+    font-size: 22px;
+}
