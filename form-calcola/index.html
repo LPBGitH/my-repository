@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>discount</title>
+</head>
+<body>
+
+
+<form onsubmit="return calcolateDiscount()">
+	<fieldset>
+		<label for="price">Prezzo:</label>
+		<input type="number" name="price" id="price" placeholder="inserisci il prezzo">
+		<br>
+		<label for="discount">Percentuale:</label>
+		<input type="number" name="discount" id="discount" placeholder="inserisci la percentuale %">
+		<br>
+		<button type="submit">Invia</button>
+	</fieldset>
+</form>
+<p id="result"></p>
+
+</body>
+<script>
+	 function calcolateDiscount(){
+		
+
+const price = document.getElementById('price').value;		//prende il valore di price
+
+const discount = document.getElementById('discount').value;	//prende il valore di price
+
+const discountedPrice = price * (1 - discount / 100);	//calcola la percentuale rimuovendo una parte (il 22% calato è il 78%)
+
+//mostra il prezzo scontato
+
+const resultElement = document.getElementById('result');	//dichiara il paragrafo
+
+resultElement.innerHTML = `Prezzo scontato: Euro ${discountedPrice.toFixed(2)}`	//nel parafrafo genera il testo all'interno del tag; foFixed(2) è la quantità massima di cifre decimali dopo la virgola
+
+return false;	//previene l'invio del form
+}
+</script>
+</html> 
